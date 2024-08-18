@@ -1,0 +1,48 @@
+{
+  // "name": "kakao-chat-bot",
+  // "version": "1.0.0",
+  // "main": "dist/main.js",
+  // "type": "module",
+  // "scripts": {
+  //   "start": "node dist/main.js"
+  // },
+  // "dependencies": {
+  //   "@nestjs/core": "^7.0.0",
+  //   "@nestjs/common": "^7.0.0",
+  //   // 추가적인 의존성들
+  // },
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": false,
+    "esModuleInterop": true,
+    "module": "commonjs",
+    // "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "paths": {
+      "@/*": ["./*"]
+    },
+    "target": "es6",
+    "outDir": "./dist",
+    "sourceMap": true,
+    
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./",
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
+}
