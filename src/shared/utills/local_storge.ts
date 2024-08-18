@@ -7,6 +7,7 @@ export default class LocalStorge {
     private readonly storgePath: string;
     constructor(_path: string) {
         this.storgePath = path.join(_path, 'session-data.json');
+        if (!fs.existsSync(this.storgePath)) fs.writeFileSync(this.storgePath, '', 'utf-8');
     }
 
     // 오브젝트 데이터 저장
